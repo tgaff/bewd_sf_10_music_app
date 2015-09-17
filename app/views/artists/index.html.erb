@@ -1,6 +1,24 @@
 <div class='col-xs-12'>
-  <h1 style="color:#c33;">Artists</h1>
-  <% @artists.each do |artist| %>
-    <li> <% artist %> </li>
-  <% end %>
+
+  <div class="table-responsive">
+    <table class="table table-hover">
+
+      <tr class="small">
+        <th> Artist Image </th>
+        <th> Name </th>
+        <th> Bio </th>
+        <th> Actions </th>
+      </tr>
+
+      <!-- now rows for each artist, looping over artists -->
+      <% @artists.each do |artist| %>
+      <tr>
+        <td> <%= artist.image_url %> </td>
+        <td> <%= artist.name %> </td>
+        <td> <%= artist.description %> </td>
+        <td> Actions coming soon! </td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
 </div>
