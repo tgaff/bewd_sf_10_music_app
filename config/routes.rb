@@ -1,12 +1,7 @@
 Rails.application.routes.draw do
 
-  get 'artists/index'
-
-  get 'artists/show'
-
-  get 'artists/new'
-
-  get 'artists/edit'
+  # or resources :artist, only: [ :index, :show, :edit ]
+  resources :artists
 
   get 'home', to: 'static_pages#home'
   get 'about', to: 'static_pages#about'
