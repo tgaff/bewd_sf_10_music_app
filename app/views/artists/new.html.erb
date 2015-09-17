@@ -1,2 +1,15 @@
-<h1>Artists#new</h1>
-<p>Find me in app/views/artists/new.html.erb</p>
+<div class="container col-xs-12">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h1> Add a new artist </h1>
+  </div>
+  <div class="panel-body">
+    <%= simple_form_for @artist do |f| %>
+      <%= f.input :name %>
+      <%= f.input :description %>
+      <%= f.input :image_url %>
+      <%= f.submit "Submit".html_safe, class: "btn btn-lg btn-danger" %>
+    <% end %>
+  </div>
+</div>
+</div>
