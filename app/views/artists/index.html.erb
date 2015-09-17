@@ -18,7 +18,11 @@
         <td class="col-md-2"> <%= image_tag(artist.image_url, class: 'img-thumbnail img-responsive')  %> </td>
         <td> <%= artist.name %> </td>
         <td> <%= artist.description %> </td>
-        <td> Actions coming soon! </td>
+        <td>
+          <%= link_to( 'show', artist_path(artist), class: 'btn btn-default btn-xs') %>
+          <%= link_to 'edit', edit_artist_path(artist), class: 'btn btn-success btn-xs' %>
+          <%= link_to 'Delete', artist, method: :delete, data: { confirm: 'You sure honey?' }, class: 'btn btn-warning btn-xs' %>
+        </td>
       </tr>
       <% end %>
     </table>
