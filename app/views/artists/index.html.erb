@@ -15,7 +15,7 @@
       <!-- now rows for each artist, looping over artists -->
       <% @artists.each do |artist| %>
       <tr>
-        <td> <%= artist.image_url %> </td>
+        <td class="col-md-2"> <%= image_tag(artist.image_url, class: 'img-thumbnail img-responsive')  %> </td>
         <td> <%= artist.name %> </td>
         <td> <%= artist.description %> </td>
         <td> Actions coming soon! </td>
