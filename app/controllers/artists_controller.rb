@@ -11,4 +11,11 @@ class ArtistsController < ApplicationController
 
   def edit
   end
+
+private
+
+# for great safety!
+  def artist_params
+    params.require(:artist).permit(:name, :image_url, :description)
+  end
 end
