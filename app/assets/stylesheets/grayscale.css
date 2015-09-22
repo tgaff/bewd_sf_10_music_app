@@ -147,7 +147,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(http://images6.fanpop.com/image/photos/32700000/Beyonce-IASF-beyonce-32700249-1280-960.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -162,6 +162,7 @@ a:focus {
 
 .intro .intro-body .brand-heading {
     font-size: 40px;
+    color: #333;
 }
 
 .intro .intro-body .intro-text {
