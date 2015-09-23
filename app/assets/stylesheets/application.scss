@@ -17,4 +17,19 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "grayscale";
 
+
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+.lora_font {
+  font-family: 'Lora', serif;
+}
+
+.montserrat_font {
+  font-family: 'Montserrat', sans-serif;
+}
